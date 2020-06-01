@@ -1,18 +1,16 @@
-﻿using System ;
-using System.Diagnostics;
+﻿using System;
 
 namespace EncapsulamentoPOO
 {
     class Program
     {
-         Cartao Visa = new Cartao();
-            Visa master = new Visa();
-            master.parcelas = 6;
-            master.titular = "teste";
-            master.ComprarComDescontoMastercard(45f);
+        static void Main(string[] args)
+        {   Cartao card = new Cartao();
 
-           Console.WriteLine(master.parcelas);
+            Mastercard master = new Mastercard();
+            master.titular = "Gabriel";
+            master.parcelas = 15;
+            master.ComprarComDescontoMastercard(150f);}
         }
-    }
-}    
-    
+}
+
